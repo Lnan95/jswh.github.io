@@ -2,17 +2,12 @@
 <rss version="2.0"><channel><title>Mirror Lake - jswh</title><link>http://blog.jswh.me/</link><description>stay calm like a mirror lake</description><lastBuildDate>Mon, 13 Aug 2018 15:51:00 +0800</lastBuildDate><item><title>[0x00] 当我们在编程时我们在做什么</title><link>http://blog.jswh.me/0x00-dang-wo-men-zai-bian-cheng-shi-wo-men-zai-zuo-shi-yao.html</link><description>&lt;p&gt;先让我们把计算机想象成一个人吧，比如说小明。&lt;/p&gt;
 &lt;p&gt;小明可以帮我们做一些事情，比如说算一下 256 乘以 1024 等于多少。这种问题对我们自己来说，按照乘法规则算一下也能算，就是麻烦，可是对小明来说算起来可很简单，这是小明擅长的领域。不过这个小明有点傻，他并不能理解你所说的“256 乘以 1024 等于多少”。因为小明是一个外国人，他只说自己的语言。如果你和一个图瓦卢的人说“告诉我 256 乘以 1024 等于多少”，我想他也会一脸莫名奇妙。你只能用他的语言告诉他。&lt;/p&gt;
 &lt;p&gt;小明说的语言就是编程语言，比如说下面这样的。&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cp"&gt;#include&lt;/span&gt; &lt;span class="cpf"&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;span class="cp"&gt;&lt;/span&gt;
-
-&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;void&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;result&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;256&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="mi"&gt;1024&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;    &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;result&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;256&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="mi"&gt;1024&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
     &lt;span class="n"&gt;printf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;%d&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;result&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;也许你一点都看不懂，没关系，刚学英语的时候也看不懂 “How …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">jswh</dc:creator><pubDate>Mon, 13 Aug 2018 15:51:00 +0800</pubDate><guid isPermaLink="false">tag:blog.jswh.me,2018-08-13:/0x00-dang-wo-men-zai-bian-cheng-shi-wo-men-zai-zuo-shi-yao.html</guid><category>写给女朋友看的编程入门指南</category></item><item><title>死亡</title><link>http://blog.jswh.me/si-wang.html</link><description>&lt;p&gt;有一个画面在脑中如金属上的刻痕一般深刻：夏蝉鸣得人心烦躁，炙烤下的水泥地面腾起看不见的雾气扭曲了视线，瘦弱的男孩半黑不白，穿装背心短裤，从二楼的窗户探出大半个身子凝望着地面。如果从这里跳下去，是不是就死了？这可能是我第一次，对死亡这件事产生思考。&lt;/p&gt;
+&lt;p&gt;也许你一点都看不懂，没关系，刚学英语的时候也看不懂 “How are you? Fine, thanks, and you?”。也许你现在能看得懂一部分，比如知道 …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">jswh</dc:creator><pubDate>Mon, 13 Aug 2018 15:51:00 +0800</pubDate><guid isPermaLink="false">tag:blog.jswh.me,2018-08-13:/0x00-dang-wo-men-zai-bian-cheng-shi-wo-men-zai-zuo-shi-yao.html</guid><category>写给女朋友看的编程入门指南</category></item><item><title>死亡</title><link>http://blog.jswh.me/si-wang.html</link><description>&lt;p&gt;有一个画面在脑中如金属上的刻痕一般深刻：夏蝉鸣得人心烦躁，炙烤下的水泥地面腾起看不见的雾气扭曲了视线，瘦弱的男孩半黑不白，穿装背心短裤，从二楼的窗户探出大半个身子凝望着地面。如果从这里跳下去，是不是就死了？这可能是我第一次，对死亡这件事产生思考。&lt;/p&gt;
 &lt;p&gt;死了会怎么样，死了似乎也不会怎么样。死了就死了吧。也许是小孩子尚不懂得死亡的意义，但这个基调却在心里持续了很久。死了，也就死了吧。&lt;/p&gt;
 &lt;p&gt;第二次对死亡的印象是爷爷去世的时候。看着爷爷安静地躺着，除了因大量失血而苍白的嘴唇外，看起来不过就是睡着了。姑姑抵达时见到此景一声哭腔喊出，却被奶奶喝住了：现在还不能哭。姑姑收住了哭声，我没看清是否流泪。但守灵当夜，我确实清楚得看到，父亲站门口台阶之上，肩膀耸动，手抹着眼睛。这是我第一次看到父亲哭泣。&lt;/p&gt;
 &lt;p&gt;我跑进灵堂，看着安静的躺着的爷爷。守灵的亲戚奶奶对我说再看看吧，再看看吧，以后就再也看不到了。我回忆起每次疯玩一圈回来，都要把爷爷那个被茶渍染成深褐色的大号透明塑料茶杯里的茶水喝个精光，爷爷嘟囔着我每次都喝光不剩然后默默续上水。我终于大哭了起来。一直到现在，关于爷爷的最深的印象就是那个大茶杯，只是后来再也没有从那样的大杯子里喝过茶水了。&lt;/p&gt;
