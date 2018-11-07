@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Mirror Lake - jswh</title><link>http://blog.jswh.me/</link><description>stay calm like a mirror lake</description><lastBuildDate>Tue, 09 Oct 2018 11:39:39 +0800</lastBuildDate><item><title>0x00 序</title><link>http://blog.jswh.me/0x00-xu.html</link><description>&lt;p&gt;2014年毕业，按照毕业算工作年限是四年，如果是2014年初的实习开始，就快五年了。五年来，从一无所知的小白到现在前端后端都能写，虽然自认业务能力充足，但很多时候还是带点心虚。&lt;/p&gt;
-&lt;p&gt;有的时候不得不承认，不是科班出生的，总归是要比别人慢一点。当别人已经开始学习大数据、AI、区块链的时候，我还在补数据结构、操作系统、编译原理，还补得磕磕绊绊。五年了，因为没有系统的检验，即使学了，还是不明白自己究竟有几斤几两。对事物的控制欲望让我想知道方方面面的细节，否则我就不放心。对于自身也是一样。虽然我知道面对寻常的后端开发工作，90%以上的工作都可以胜任，但只有在问题出现的时候才能判断这件事是否在这90%之中，让我非常的焦虑。这种焦虑，有点像以前做数学考卷的时候，知道某个题是用什么知识点来解的，但能不能解出来，还得算来看看——本质上是知识没有条理性。&lt;/p&gt;
-&lt;p&gt;最近一长段时间，大概有个一年半，尝试过用一些方法来梳理自己的知识体系。用过思维导图，感觉太过简单；用过wiki，但会陷入到细节中拔不出来。不管怎么做，总是不那么如意和顺畅。做准备工作的时候，明明觉得提纲里的东西都用得顺手，但是实际写来却艰苦卓绝。最近想明白了 …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">jswh</dc:creator><pubDate>Tue, 09 Oct 2018 11:39:39 +0800</pubDate><guid isPermaLink="false">tag:blog.jswh.me,2018-10-09:/0x00-xu.html</guid><category>后端面试宝典</category></item><item><title>[0x00] 当我们在编程时我们在做什么</title><link>http://blog.jswh.me/0x00-dang-wo-men-zai-bian-cheng-shi-wo-men-zai-zuo-shi-yao.html</link><description>&lt;p&gt;先让我们把计算机想象成一个人吧。一个人总要有个名字，就叫他小明吧。&lt;/p&gt;
+<rss version="2.0"><channel><title>Mirror Lake - jswh</title><link>http://blog.jswh.me/</link><description>stay calm like a mirror lake</description><lastBuildDate>Wed, 07 Nov 2018 16:16:57 +0800</lastBuildDate><item><title>Rust 模块系统初探</title><link>http://blog.jswh.me/rust-mo-kuai-xi-tong-chu-tan.html</link><description>&lt;p&gt;学习一门编程语言，知道如何引用外部的文件或者说模块系统是比较重要的一点，PHP用&lt;code&gt;autoload&lt;/code&gt;机制，C有经典的&lt;code&gt;include&lt;/code&gt;。最近写 &lt;a href="https://github.com/jswh/wslexe"&gt;wslexe&lt;/a&gt; 的时候，因为原作者用的 rust，所以就简单学习了一下。但是 rust 的模块文档是从顶部设计开始写的，很多概念，有些复杂，这里写一个应用导向的学习笔记。&lt;/p&gt;
+&lt;h5&gt;引入文件&lt;/h5&gt;
+&lt;p&gt;首先，让我们初始化一个项目。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;mkdir rustmod
+&lt;span class="nb"&gt;cd&lt;/span&gt; rustmod
+cargo init
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;我们得到了下面这样的基础项目结构&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;rustmod
+├── Cargo.toml
+└── src
+    └── main.rs
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;code&gt;main.rs&lt;/code&gt;里面只有一个简单的输出的‘hello world’的&lt;code&gt;main&lt;/code&gt;函数。我们新增一个&lt;code&gt;functions.rs&lt;/code&gt;文件，将生成字符串的过程做成一个函数，供&lt;code&gt;main …&lt;/code&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">jswh</dc:creator><pubDate>Wed, 07 Nov 2018 16:16:57 +0800</pubDate><guid isPermaLink="false">tag:blog.jswh.me,2018-11-07:/rust-mo-kuai-xi-tong-chu-tan.html</guid><category>Rust</category><category>模块</category></item><item><title>[0x00] 当我们在编程时我们在做什么</title><link>http://blog.jswh.me/0x00-dang-wo-men-zai-bian-cheng-shi-wo-men-zai-zuo-shi-yao.html</link><description>&lt;p&gt;先让我们把计算机想象成一个人吧。一个人总要有个名字，就叫他小明吧。&lt;/p&gt;
 &lt;p&gt;小明可以帮我们做一些事情，比如说算一下 256 乘以 1024 等于多少。这种问题对我们自己来说，按照乘法规则算一下也能算，就是麻烦，可是对小明来说算起来可很简单，这是小明擅长的领域。不过这个小明并不能理解你所说的“256 乘以 1024 等于多少”这句话。因为小明是一个外国人，他只说自己的语言。就像你和一个图瓦卢的人说“告诉我 256 乘以 1024 等于多少”，我想他也会一脸莫名奇妙。小明也是这样，不能理解你的意思。我们只能用小明的语言来告诉他要做什么。&lt;/p&gt;
 &lt;p&gt;小明说的语言就是编程语言，比如说下面这样的。&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;    &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;result&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;256&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="mi"&gt;1024&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;

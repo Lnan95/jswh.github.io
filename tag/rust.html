@@ -54,7 +54,7 @@
 <meta property="og:url" content="http://blog.jswh.me"/>
 <meta property="og:image" content="http://cdn.jswh.me/6405755.jpeg">
 
-  <title>Mirror Lake &ndash; 后端面试宝典 标签</title>
+  <title>Mirror Lake &ndash; Rust 标签</title>
 
 </head>
 <body>
@@ -104,20 +104,35 @@
 
 <article>
   <header>
-    <h2><a href="http://blog.jswh.me/0x00-xu.html#0x00-xu">0x00 序</a></h2>
+    <h2><a href="http://blog.jswh.me/rust-mo-kuai-xi-tong-chu-tan.html#rust-mo-kuai-xi-tong-chu-tan">Rust 模块系统初探</a></h2>
     <p>
-      在 2018/10/09 11:39:39 发布于 <a href="http://blog.jswh.me/category/bian-cheng-shi-jian.html">编程实践</a> 分类
+      在 2018/11/07 16:16:57 发布于 <a href="http://blog.jswh.me/category/bian-cheng-shi-jian.html">编程实践</a> 分类
 
           &#8226; 标签为
-              <a href="http://blog.jswh.me/tag/hou-duan-mian-shi-bao-dian.html">后端面试宝典</a>
+              <a href="http://blog.jswh.me/tag/rust.html">Rust</a>,              <a href="http://blog.jswh.me/tag/mo-kuai.html">模块</a>
     </p>
   </header>
   <div>
-      <p>2014年毕业，按照毕业算工作年限是四年，如果是2014年初的实习开始，就快五年了。五年来，从一无所知的小白到现在前端后端都能写，虽然自认业务能力充足，但很多时候还是带点心虚。</p>
-<p>有的时候不得不承认，不是科班出生的，总归是要比别人慢一点。当别人已经开始学习大数据、AI、区块链的时候，我还在补数据结构、操作系统、编译原理，还补得磕磕绊绊。五年了，因为没有系统的检验，即使学了，还是不明白自己究竟有几斤几两。对事物的控制欲望让我想知道方方面面的细节，否则我就不放心。对于自身也是一样。虽然我知道面对寻常的后端开发工作，90%以上的工作都可以胜任，但只有在问题出现的时候才能判断这件事是否在这90%之中，让我非常的焦虑。这种焦虑，有点像以前做数学考卷的时候，知道某个题是用什么知识点来解的，但能不能解出来，还得算来看看——本质上是知识没有条理性。</p>
-<p>最近一长段时间，大概有个一年半，尝试过用一些方法来梳理自己的知识体系。用过思维导图，感觉太过简单；用过wiki，但会陷入到细节中拔不出来。不管怎么做，总是不那么如意和顺畅。做准备工作的时候，明明觉得提纲里的东西都用得顺手，但是实际写来却艰苦卓绝。最近想明白了 …</p>
+      <p>学习一门编程语言，知道如何引用外部的文件或者说模块系统是比较重要的一点，PHP用<code>autoload</code>机制，C有经典的<code>include</code>。最近写 <a href="https://github.com/jswh/wslexe">wslexe</a> 的时候，因为原作者用的 rust，所以就简单学习了一下。但是 rust 的模块文档是从顶部设计开始写的，很多概念，有些复杂，这里写一个应用导向的学习笔记。</p>
+<h5>引入文件</h5>
+<p>首先，让我们初始化一个项目。</p>
+<div class="highlight"><pre><span></span>mkdir rustmod
+<span class="nb">cd</span> rustmod
+cargo init
+</pre></div>
+
+
+<p>我们得到了下面这样的基础项目结构</p>
+<div class="highlight"><pre><span></span>rustmod
+├── Cargo.toml
+└── src
+    └── main.rs
+</pre></div>
+
+
+<p><code>main.rs</code>里面只有一个简单的输出的‘hello world’的<code>main</code>函数。我们新增一个<code>functions.rs</code>文件，将生成字符串的过程做成一个函数，供<code>main …</code></p>
       <br>
-      <a class="btn" href="http://blog.jswh.me/0x00-xu.html#0x00-xu">阅读全文</a>
+      <a class="btn" href="http://blog.jswh.me/rust-mo-kuai-xi-tong-chu-tan.html#rust-mo-kuai-xi-tong-chu-tan">阅读全文</a>
   </div>
 </article>
 
